@@ -1,0 +1,443 @@
+[
+  {
+    "patient_name": "John Smith",
+    "age": "58",
+    "gender": "male",
+    "disease": "Type 2 Diabetes, Hypertension",
+    "chief_complaint": "ongoing fatigue and occasional blurred vision",
+    "vital_signs": {},
+    "symptoms": [
+      "fatigue",
+      "blurred vision",
+      "mild numbness in feet"
+    ],
+    "medications": [
+      "Metformin 500 mg BID",
+      "insulin injections",
+      "Lisinopril 20 mg daily"
+    ],
+    "lab_results": {
+      "A1C": "8.7%",
+      "COVID-19": "negative"
+    },
+    "assessment_plan": "Schedule a fasting glucose test in two weeks, consider adjusting insulin dosage if glucose remains high, reinforce medication adherence and review dietary habits at the next visit.",
+    "summarization_main_findings": "John Smith, a 58-year-old male with Type 2 Diabetes and hypertension, presents with fatigue, blurred vision, and early signs of peripheral neuropathy."
+  },
+  {
+    "patient_name": "Linda Green",
+    "age": "45",
+    "gender": "female",
+    "disease": "Type 2 Diabetes",
+    "chief_complaint": "Persistent headaches and tingling in left foot.",
+    "vital_signs": {},
+    "symptoms": [
+      "persistent headaches",
+      "tingling in left foot",
+      "occasional insomnia"
+    ],
+    "medications": [
+      "Metformin 500 mg BID",
+      "Atorvastatin 10 mg daily"
+    ],
+    "lab_results": {
+      "Last A1C": "7.9%"
+    },
+    "assessment_plan": "Continue current medication regimen, order routine labs for lipids and A1C. Advise patient to monitor glucose levels more frequently if headaches persist.",
+    "summarization_main_findings": "Key risk factors include Type 2 Diabetes with an A1C of 7.9% and persistent headaches."
+  },
+  {
+    "patient_name": "Michael Brown",
+    "age": "62",
+    "gender": "male",
+    "disease": "hypertension, Type 2 Diabetes",
+    "chief_complaint": "",
+    "vital_signs": {
+      "BP": "150/95",
+      "pulse": "78",
+      "temp": "98.6\u00b0F"
+    },
+    "symptoms": [],
+    "medications": [
+      "Metformin 1000 mg daily",
+      "Lisinopril 20 mg daily",
+      "multivitamin"
+    ],
+    "lab_results": {
+      "last_known_A1C": "8.1%"
+    },
+    "assessment_plan": "Increase Lisinopril dose if BP remains elevated. Schedule blood tests to check renal function. Advise patient to keep arm elevated and follow up with orthopedics.",
+    "summarization_main_findings": "Michael Brown is at risk due to his elevated blood pressure and A1C level indicating poorly controlled diabetes."
+  },
+  {
+    "patient_name": "Sarah Johnson",
+    "age": "50",
+    "gender": "female",
+    "disease": "Type 2 Diabetes",
+    "chief_complaint": "Frequent urination, increased thirst",
+    "vital_signs": {
+      "BP": "140/88",
+      "HR": "82"
+    },
+    "symptoms": [
+      "anxiety at night"
+    ],
+    "medications": [
+      "Glipizide 5 mg daily",
+      "Simvastatin 20 mg daily"
+    ],
+    "lab_results": {
+      "A1C": "7.6%"
+    },
+    "assessment_plan": "Reinforce medication adherence. Consider switching to Metformin if blood glucose remains high. Schedule follow-up in 4 weeks to reassess symptoms.",
+    "summarization_main_findings": "Sarah Johnson is at risk due to her Type 2 Diabetes with an A1C of 7.6% and hypertension indicated by her blood pressure of 140/88."
+  },
+  {
+    "patient_name": "Carlos Ramirez",
+    "age": "55",
+    "gender": "male",
+    "disease": "Type 2 Diabetes, Hypertension",
+    "chief_complaint": "Ongoing fatigue and left knee pain",
+    "vital_signs": {},
+    "symptoms": [
+      "fatigue",
+      "left knee pain",
+      "disrupted sleep"
+    ],
+    "medications": [
+      "Metformin 500 mg BID",
+      "Jardiance 10 mg daily",
+      "Losartan 50 mg daily"
+    ],
+    "lab_results": {
+      "A1C": "9.2%"
+    },
+    "assessment_plan": "Increase Jardiance dosage if next labs still indicate poor glucose control. Recommend an orthopedic consult for knee pain. Counsel patient on sleep hygiene.",
+    "summarization_main_findings": "Carlos Ramirez is at risk due to poorly controlled Type 2 Diabetes and hypertension, compounded by sleep disruption."
+  },
+  {
+    "patient_name": "Rebecca Lee",
+    "age": "29",
+    "gender": "female",
+    "disease": "Type 2 Diabetes",
+    "chief_complaint": "Rapid weight gain over the past month.",
+    "vital_signs": {
+      "BP": "128/80",
+      "HR": "70",
+      "fever": "no"
+    },
+    "symptoms": [
+      "frustration about constantly having to check blood sugar",
+      "mild seasonal allergies"
+    ],
+    "medications": [
+      "Metformin 500 mg daily",
+      "OTC antihistamines occasionally"
+    ],
+    "lab_results": {
+      "A1C": "8.0%"
+    },
+    "assessment_plan": "Encourage diet and exercise modifications. Schedule comprehensive labs, including thyroid function tests, to rule out other causes of weight gain.",
+    "summarization_main_findings": "Rebecca Lee is at risk due to her newly diagnosed Type 2 Diabetes and family history of thyroid disorder."
+  },
+  {
+    "patient_name": "Thomas Wilson",
+    "age": "67",
+    "gender": "male",
+    "disease": "chronic kidney disease stage 3, Type 2 Diabetes",
+    "chief_complaint": "anxiety about buffet options at granddaughter's birthday party",
+    "vital_signs": {},
+    "symptoms": [
+      "mild fatigue"
+    ],
+    "medications": [
+      "Metformin 500 mg BID",
+      "Insulin glargine (10 units nightly)",
+      "Amlodipine 5 mg daily"
+    ],
+    "lab_results": {
+      "A1C": "8.5%",
+      "eGFR": "45 mL/min/1.73m\u00b2"
+    },
+    "assessment_plan": "Monitor renal function closely. Possibly consult nephrology if eGFR declines further. Recommend dietician referral to manage both CKD and T2D.",
+    "summarization_main_findings": "The patient is at risk due to chronic kidney disease stage 3 and poorly controlled Type 2 Diabetes with an A1C of 8.5%."
+  },
+  {
+    "patient_name": "Emily Dawson",
+    "age": "36",
+    "gender": "female",
+    "disease": "Type 2 Diabetes",
+    "chief_complaint": "Increased thirst and frequent urination for the past two weeks.",
+    "vital_signs": {},
+    "symptoms": [
+      "increased thirst",
+      "frequent urination",
+      "mild anxiety"
+    ],
+    "medications": [
+      "Metformin 500 mg once daily"
+    ],
+    "lab_results": {
+      "A1C": "9.0%"
+    },
+    "assessment_plan": "Stress the importance of medication adherence. Consider adding a short-acting insulin if glucose remains uncontrolled. Advise adopting consistent meal times.",
+    "summarization_main_findings": "Emily has poorly controlled Type 2 Diabetes with an A1C of 9.0%, is non-compliant with her medication, and is experiencing stress from a new job."
+  },
+  {
+    "patient_name": "Robert Kim",
+    "age": "48",
+    "gender": "male",
+    "disease": "Type 2 Diabetes, hyperlipidemia",
+    "chief_complaint": "",
+    "vital_signs": {
+      "BP": "140/90",
+      "HR": "76",
+      "temperature": ""
+    },
+    "symptoms": [
+      "occasional blurry vision at night"
+    ],
+    "medications": [
+      "Metformin 1000 mg BID",
+      "Rosuvastatin 10 mg daily"
+    ],
+    "lab_results": {},
+    "assessment_plan": "Order full blood panel including fasting glucose and lipid profile. Encourage the patient to maintain an updated medication list, including supplements.",
+    "summarization_main_findings": "Robert Kim is at risk due to his history of Type 2 Diabetes and hyperlipidemia, with occasional blurry vision at night."
+  },
+  {
+    "patient_name": "Diane Carter",
+    "age": "60",
+    "gender": "female",
+    "disease": "Type 2 Diabetes",
+    "chief_complaint": "Feeling increasingly tired, especially after lunch.",
+    "vital_signs": {},
+    "symptoms": [
+      "tiredness after lunch",
+      "annoying humming sound from ventilation system"
+    ],
+    "medications": [
+      "Sertraline 50 mg daily",
+      "Insulin detemir 15 units twice daily",
+      "Metformin 500 mg BID"
+    ],
+    "lab_results": {
+      "A1C": "8.4%"
+    },
+    "assessment_plan": "Consider adjusting insulin dose if postprandial spikes continue. Advise patient to consult her pharmacist before trying new supplements. Reinforce mental health follow-up.",
+    "summarization_main_findings": "Diane is a 60-year-old female with a long history of Type 2 Diabetes and mild depression, currently experiencing fatigue and considering new supplements for blood sugar stabilization."
+  },
+  {
+    "patient_name": "Lisa Chang",
+    "age": "72",
+    "gender": "female",
+    "disease": "Type 2 Diabetes, hypertension, mild osteoarthritis",
+    "chief_complaint": "Increased fatigue, mild swelling in ankles.",
+    "vital_signs": {},
+    "symptoms": [
+      "increased fatigue",
+      "mild swelling in ankles"
+    ],
+    "medications": [
+      "Metformin 1000 mg BID",
+      "Lisinopril 20 mg daily",
+      "occasional acetaminophen"
+    ],
+    "lab_results": {
+      "Last A1C": "8.3%"
+    },
+    "assessment_plan": "Check renal function, evaluate for possible edema related to hypertension. Advise patient to continue blood sugar monitoring and bring the herbal tea label next visit.",
+    "summarization_main_findings": "Key risk factors include age, Type 2 Diabetes with an A1C of 8.3%, and hypertension."
+  },
+  {
+    "patient_name": "George Patterson",
+    "age": "55",
+    "gender": "male",
+    "disease": "Type 2 Diabetes",
+    "chief_complaint": "Ongoing blurred vision and numbness in fingertips.",
+    "vital_signs": {},
+    "symptoms": [
+      "blurred vision",
+      "numbness in fingertips",
+      "sporadic ringing in ears"
+    ],
+    "medications": [
+      "Metformin 500 mg BID",
+      "Glipizide 5 mg daily"
+    ],
+    "lab_results": {
+      "A1C": "9.1%"
+    },
+    "assessment_plan": "Increase Glipizide dosage if readings remain high. Recommend ophthalmology consult for blurred vision. Stress dietary adjustments and consistent medication schedule.",
+    "summarization_main_findings": "George Patterson is at risk due to his poorly controlled Type 2 Diabetes, indicated by an A1C of 9.1% and noncompliance with dietary recommendations."
+  },
+  {
+    "patient_name": "Maria Ortega",
+    "age": "63",
+    "gender": "female",
+    "disease": "Type 2 Diabetes",
+    "chief_complaint": "Frequent urination, increased thirst over the last month.",
+    "vital_signs": {},
+    "symptoms": [],
+    "medications": [
+      "Metformin 1000 mg BID",
+      "Sitagliptin 100 mg daily"
+    ],
+    "lab_results": {
+      "A1C": "8.7%",
+      "anemia": "mild"
+    },
+    "assessment_plan": "Recheck blood counts, consider adding basal insulin if next labs remain uncontrolled. Reinforce medication adherence and proper pill organization.",
+    "summarization_main_findings": "Maria Ortega is a 63-year-old female with poorly controlled Type 2 Diabetes, evidenced by an A1C of 8.7%, and concerns about medication adherence."
+  },
+  {
+    "patient_name": "Anthony Reynolds",
+    "age": "48",
+    "gender": "male",
+    "disease": "Type 2 Diabetes",
+    "chief_complaint": "intermittent chest tightness",
+    "vital_signs": {
+      "BP": "145/92",
+      "HR": "80",
+      "Temp": "98.2\u00b0F"
+    },
+    "symptoms": [
+      "intermittent chest tightness"
+    ],
+    "medications": [
+      "Metformin 500 mg TID",
+      "Atorvastatin 20 mg daily"
+    ],
+    "lab_results": {
+      "Last known A1C": "7.8%"
+    },
+    "assessment_plan": "Rule out cardiac causes of chest tightness. Continue current therapy for diabetes. Suggest stress management techniques and dietary counseling.",
+    "summarization_main_findings": "Anthony Reynolds is at risk due to his Type 2 Diabetes, elevated blood pressure, and stress-related eating habits."
+  },
+  {
+    "patient_name": "Priya Kapoor",
+    "age": "34",
+    "gender": "female",
+    "disease": "Type 2 Diabetes",
+    "chief_complaint": "Sudden weight loss, fatigue, and occasional dizziness.",
+    "vital_signs": {},
+    "symptoms": [
+      "sudden weight loss",
+      "fatigue",
+      "occasional dizziness"
+    ],
+    "medications": [
+      "Metformin 500 mg BID"
+    ],
+    "lab_results": {
+      "A1C": "9.4%",
+      "liver enzymes": "slightly elevated"
+    },
+    "assessment_plan": "Investigate liver enzyme elevation, reinforce dietary recommendations, ensure patient understands how to monitor glucose while traveling. Schedule follow-up labs in 6 weeks.",
+    "summarization_main_findings": "Patient is at risk due to newly diagnosed Type 2 Diabetes with elevated A1C and liver enzymes."
+  },
+  {
+    "patient_name": "James Henderson",
+    "age": "59",
+    "gender": "male",
+    "disease": "Type 2 Diabetes, hyperlipidemia",
+    "chief_complaint": "Routine check-up for Type 2 Diabetes and hyperlipidemia",
+    "vital_signs": {},
+    "symptoms": [],
+    "medications": [
+      "Metformin 1000 mg BID",
+      "Rosuvastatin 10 mg daily"
+    ],
+    "lab_results": {
+      "A1C": "7.5%"
+    },
+    "assessment_plan": "Encourage more physical activity, potentially indoors. Order new labs to monitor lipid profile and blood glucose control. Discuss possible addition of medication for better glycemic management if needed.",
+    "summarization_main_findings": "James Henderson is at risk due to minimal exercise and a recent A1C of 7.5% in the context of Type 2 Diabetes and hyperlipidemia."
+  },
+  {
+    "patient_name": "Anna Li",
+    "age": "27",
+    "gender": "female",
+    "disease": "Type 2 Diabetes",
+    "chief_complaint": "Headaches, frequent nausea, and feeling jittery at work.",
+    "vital_signs": {},
+    "symptoms": [
+      "headaches",
+      "nausea",
+      "jitteriness"
+    ],
+    "medications": [
+      "Metformin 500 mg daily"
+    ],
+    "lab_results": {
+      "A1C": "8.2%"
+    },
+    "assessment_plan": "Advise limiting high-caffeine beverages. Re-check fasting glucose. Consider adjusting medication if glucose remains elevated. Suggest hydration and headache evaluation if symptoms persist.",
+    "summarization_main_findings": "Anna Li is at risk due to her uncontrolled Type 2 Diabetes and high caffeine intake contributing to her symptoms."
+  },
+  {
+    "patient_name": "Kevin Wright",
+    "age": "66",
+    "gender": "male",
+    "disease": "Type 2 Diabetes",
+    "chief_complaint": "Chronic back pain worsens when sitting in recliner too long.",
+    "vital_signs": {},
+    "symptoms": [
+      "slight dizziness upon standing",
+      "blood sugar swings"
+    ],
+    "medications": [
+      "Metformin 500 mg TID",
+      "Ibuprofen PRN",
+      "Lisinopril 10 mg daily"
+    ],
+    "lab_results": {
+      "Last A1C": "8.9%"
+    },
+    "assessment_plan": "Evaluate orthostatic hypotension. Increase dietary supervision, possibly add short-acting insulin if glycemic control remains inadequate. Suggest physical therapy referral for back pain.",
+    "summarization_main_findings": "Kevin Wright is at risk due to poorly controlled diabetes with an A1C of 8.9% and symptoms of orthostatic hypotension."
+  },
+  {
+    "patient_name": "Olivia Baker",
+    "age": "43",
+    "gender": "female",
+    "disease": "Type 2 Diabetes",
+    "chief_complaint": "Persistent fatigue, difficulty concentrating at work.",
+    "vital_signs": {},
+    "symptoms": [
+      "Persistent fatigue",
+      "difficulty concentrating"
+    ],
+    "medications": [
+      "Metformin 1000 mg BID",
+      "Empagliflozin 10 mg daily"
+    ],
+    "lab_results": {
+      "Last A1C": "8.1%"
+    },
+    "assessment_plan": "Reassess medication dosage, possibly increase Empagliflozin. Encourage more consistent meal times. Schedule an A1C test in 3 weeks to monitor any improvement.",
+    "summarization_main_findings": "Olivia Baker is a 43-year-old female with poorly controlled Type 2 Diabetes, indicated by an A1C of 8.1%, and is experiencing persistent fatigue and concentration difficulties."
+  },
+  {
+    "patient_name": "David Kim",
+    "age": "70",
+    "gender": "male",
+    "disease": "Type 2 Diabetes, CHF, chronic bronchitis",
+    "chief_complaint": "Mild shortness of breath when climbing stairs, random spikes in blood glucose.",
+    "vital_signs": {},
+    "symptoms": [
+      "shortness of breath",
+      "confusion",
+      "sleep disturbance"
+    ],
+    "medications": [
+      "Metformin 500 mg BID",
+      "Furosemide 20 mg daily",
+      "carvedilol 6.25 mg BID"
+    ],
+    "lab_results": {
+      "Last known A1C": "9.0%"
+    },
+    "assessment_plan": "Evaluate cardiac status, check BNP levels. Consider adding insulin if glucose remains poorly controlled. Recommend addressing sleep quality issues and ensuring a consistent medication schedule.",
+    "summarization_main_findings": "David Kim is at risk due to his age, history of Type 2 Diabetes with poor glucose control, and congestive heart failure."
+  }
+]

@@ -1,0 +1,582 @@
+[
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate but has some minor issues. The vital signs field is missing, and the age should be an integer, not a string. The rest of the fields are correctly extracted and reflect the content of the clinical note.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "incorrect",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "missing",
+      "symptoms": "correct",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "John Smith",
+      "age": "58-year-old",
+      "gender": "male",
+      "disease": "Type 2 Diabetes (T2D), hypertension",
+      "chief_complaint": "complaining of ongoing fatigue and occasional blurred vision",
+      "vital_signs": "",
+      "symptoms": "ongoing fatigue and occasional blurred vision, mild numbness in his feet",
+      "medications": "Metformin 500 mg BID, occasional insulin injections, Lisinopril 20 mg daily",
+      "lab_results": "elevated A1C of 8.7%, tested negative for COVID-19",
+      "assessment_plan": "schedule a fasting glucose test in two weeks to reassess, consider adjusting insulin dosage if glucose remains high, reinforce medication adherence and review dietary habits at the next visit",
+      "summarization_main_findings": "John Smith, a 58-year-old male with Type 2 Diabetes and hypertension, presents with fatigue, blurred vision, and early signs of peripheral neuropathy."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate with minor issues. The 'vital_signs' field is correctly left empty, but the 'lab_results' field should include both lipids and A1C as planned tests. The summarization is accurate, capturing the key risk factors.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "correct",
+      "medications": "correct",
+      "lab_results": "incorrect",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Linda Green",
+      "age": "45-year-old",
+      "gender": "female",
+      "disease": "Type 2 Diabetes",
+      "chief_complaint": "Persistent headaches and tingling in left foot.",
+      "vital_signs": "",
+      "symptoms": "Reports occasional insomnia, which she attributes to stress at her job as a florist.",
+      "medications": "Current medications: Metformin 500 mg BID, Atorvastatin 10 mg daily.",
+      "lab_results": "Last recorded A1C was 7.9%.",
+      "assessment_plan": "Continue current medication regimen, order routine labs for lipids and A1C. Advise patient to monitor glucose levels more frequently if headaches persist.",
+      "summarization_main_findings": "Past medical history includes Type 2 Diabetes, diagnosed three years ago."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate but has a few areas that need improvement. The chief complaint is missing, and the multivitamin medication is incorrectly included as it lacks specific details. The summarization of main findings is accurate.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "missing",
+      "vital_signs": "correct",
+      "symptoms": "correct",
+      "medications": "incorrect",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Michael Brown",
+      "age": "62-year-old",
+      "gender": "male",
+      "disease": "hypertension and Type 2 Diabetes",
+      "chief_complaint": "",
+      "vital_signs": "BP 150/95, pulse 78, temp 98.6\u00b0F",
+      "symptoms": "",
+      "medications": "Metformin 1000 mg daily, Lisinopril 20 mg daily, multivitamin",
+      "lab_results": "Last known A1C was 8.1%",
+      "assessment_plan": "Increase Lisinopril dose if BP remains elevated. Schedule blood tests to check renal function. Advise patient to keep arm elevated and follow up with orthopedics.",
+      "summarization_main_findings": "Michael Brown is at risk due to his elevated blood pressure and A1C level indicating poorly controlled diabetes."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate, capturing key details from the clinical note. However, the summarization_main_findings field inaccurately includes hypertension, which is not explicitly mentioned in the note. The extraction could be improved by ensuring the summary reflects only the conditions explicitly stated.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "correct",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "inaccurate"
+    },
+    "evidence": {
+      "patient_name": "Patient: Sarah Johnson",
+      "age": "50-year-old",
+      "gender": "female",
+      "disease": "Diagnosed with Type 2 Diabetes last year.",
+      "chief_complaint": "Complaint: Frequent urination, increased thirst.",
+      "vital_signs": "Vitals: BP 140/88, HR 82.",
+      "symptoms": "States she has been feeling anxious at night.",
+      "medications": "Current regimen: Glipizide 5 mg daily... Simvastatin 20 mg daily.",
+      "lab_results": "Lab results from last month show A1C of 7.6%.",
+      "assessment_plan": "Plan: Reinforce medication adherence. Consider switching to Metformin if blood glucose remains high. Schedule follow-up in 4 weeks to reassess symptoms.",
+      "summarization_main_findings": "Sarah Johnson is at risk due to her Type 2 Diabetes with an A1C of 7.6% and hypertension indicated by her blood pressure of 140/88."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate but has a few areas that need improvement. The vital signs field is correctly left empty, but the disease field should include only Type 2 Diabetes and Hypertension, not the specific medications. The summarization_main_findings is accurate and captures the key concerns.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "correct",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Carlos Ramirez",
+      "age": "55-year-old",
+      "gender": "male",
+      "disease": "Type 2 Diabetes, Hypertension",
+      "chief_complaint": "Presenting with ongoing fatigue and left knee pain.",
+      "vital_signs": "",
+      "symptoms": "ongoing fatigue and left knee pain. The knee issue may be orthopedic in nature due to a past sports injury.",
+      "medications": "Metformin 500 mg BID and Jardiance 10 mg daily. Currently also on Losartan 50 mg daily for hypertension.",
+      "lab_results": "Last known A1C was 9.2%.",
+      "assessment_plan": "Increase Jardiance dosage if next labs still indicate poor glucose control. Recommend an orthopedic consult for knee pain. Counsel patient on sleep hygiene.",
+      "summarization_main_findings": "Known history of Type 2 Diabetes, on Metformin 500 mg BID and Jardiance 10 mg daily. Last known A1C was 9.2%. Currently also on Losartan 50 mg daily for hypertension."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate, capturing key details such as the patient's name, age, gender, disease, and chief complaint. However, it misses the family history of thyroid disorder and incorrectly includes 'frustration about constantly having to check blood sugar' as a symptom rather than a patient report. The summarization of main findings is accurate.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "incorrect",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Rebecca Lee",
+      "age": "29-year-old",
+      "gender": "female",
+      "disease": "Newly diagnosed with Type 2 Diabetes",
+      "chief_complaint": "Rapid weight gain over the past month.",
+      "vital_signs": "BP 128/80, HR 70, no fever",
+      "symptoms": "Reports feeling frustrated about constantly having to check blood sugar. She also has mild seasonal allergies",
+      "medications": "Metformin 500 mg daily, taking OTC antihistamines occasionally",
+      "lab_results": "A1C at 8.0%",
+      "assessment_plan": "Encourage diet and exercise modifications. Schedule comprehensive labs, including thyroid function tests, to rule out other causes of weight gain.",
+      "summarization_main_findings": "Newly diagnosed with Type 2 Diabetes, family history: mother with thyroid disorder."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate but has a few issues. The chief complaint is incorrectly extracted, and the vital signs are missing. The summarization of main findings is accurate.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "incorrect",
+      "vital_signs": "missing",
+      "symptoms": "correct",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Thomas Wilson",
+      "age": "67-year-old",
+      "gender": "male",
+      "disease": "chronic kidney disease (CKD) stage 3 and Type 2 Diabetes",
+      "chief_complaint": "anxious about the buffet options",
+      "vital_signs": "",
+      "symptoms": "mild fatigue",
+      "medications": "Metformin 500 mg BID, Insulin glargine (10 units nightly), and Amlodipine 5 mg daily",
+      "lab_results": "A1C of 8.5%, eGFR 45 mL/min/1.73m\u00b2",
+      "assessment_plan": "Monitor renal function closely. Possibly consult nephrology if eGFR declines further. Recommend dietician referral to manage both CKD and T2D.",
+      "summarization_main_findings": "chronic kidney disease stage 3 and poorly controlled Type 2 Diabetes with an A1C of 8.5%"
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate, capturing key details from the clinical note. However, it misses the mention of the patient's ill dog affecting medication adherence and the consideration of counseling for anxiety. Including these details would improve completeness.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "correct",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Emily Dawson",
+      "age": "36-year-old",
+      "gender": "female",
+      "disease": "Diagnosed with Type 2 Diabetes",
+      "chief_complaint": "Increased thirst and frequent urination for the past two weeks.",
+      "vital_signs": "",
+      "symptoms": "Increased thirst and frequent urination for the past two weeks. Currently experiencing mild anxiety.",
+      "medications": "Prescribed Metformin 500 mg once daily",
+      "lab_results": "A1C from last visit was 9.0%",
+      "assessment_plan": "Stress the importance of medication adherence. Consider adding a short-acting insulin if glucose remains uncontrolled. Advise adopting consistent meal times.",
+      "summarization_main_findings": "Diagnosed with Type 2 Diabetes four years ago, not always compliant with medication. A1C from last visit was 9.0%. Reports she recently started a stressful new job at a tech startup."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate but has a few areas for improvement. The chief complaint is missing, and the temperature field should be correctly left empty. The summarization of main findings is accurate.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "missing",
+      "vital_signs": "correct",
+      "symptoms": "correct",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Robert Kim",
+      "age": "48-year-old",
+      "gender": "male",
+      "disease": "History of Type 2 Diabetes and hyperlipidemia",
+      "chief_complaint": "Annual exam visit",
+      "vital_signs": "BP 140/90, HR 76, no fever",
+      "symptoms": "occasional blurry vision at night",
+      "medications": "Metformin 1000 mg BID, Rosuvastatin 10 mg daily",
+      "lab_results": "",
+      "assessment_plan": "Order full blood panel including fasting glucose and lipid profile. Encourage the patient to maintain an updated medication list, including supplements.",
+      "summarization_main_findings": "History of Type 2 Diabetes and hyperlipidemia, with occasional blurry vision at night."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate but contains minor errors. The symptoms field incorrectly includes the complaint about the ventilation system, which is not a symptom. The summarization_main_findings accurately reflects the key points from the note.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "incorrect",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Diane Carter",
+      "age": "60-year-old",
+      "gender": "female",
+      "disease": "Type 2 Diabetes",
+      "chief_complaint": "feeling increasingly tired, especially after lunch",
+      "vital_signs": "",
+      "symptoms": "feeling increasingly tired, especially after lunch; annoying humming sound from the exam room\u2019s ventilation system",
+      "medications": "Sertraline 50 mg daily; Insulin detemir 15 units twice daily; Metformin 500 mg BID",
+      "lab_results": "Last measured A1C was 8.4%",
+      "assessment_plan": "Consider adjusting insulin dose if postprandial spikes continue. Advise patient to consult her pharmacist before trying new supplements. Reinforce mental health follow-up.",
+      "summarization_main_findings": "Diane is a 60-year-old female with a long history of Type 2 Diabetes and mild depression, currently experiencing fatigue and considering new supplements for blood sugar stabilization."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate, capturing the key details from the clinical note. However, the 'vital_signs' field is missing, and the 'lab_results' field is slightly incorrect in its format. The extraction can be improved by including any mentioned vital signs and correcting the format of lab results.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "missing",
+      "symptoms": "correct",
+      "medications": "correct",
+      "lab_results": "incorrect",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Lisa Chang",
+      "age": "72-year-old",
+      "gender": "female",
+      "disease": "Type 2 Diabetes for 10 years, hypertension, mild osteoarthritis",
+      "chief_complaint": "Increased fatigue, mild swelling in ankles.",
+      "vital_signs": "",
+      "symptoms": "Increased fatigue, mild swelling in ankles.",
+      "medications": "Metformin 1000 mg BID, Lisinopril 20 mg daily, and occasional acetaminophen",
+      "lab_results": "Last A1C recorded at 8.3%",
+      "assessment_plan": "Check renal function, evaluate for possible edema related to hypertension. Advise patient to continue blood sugar monitoring and bring the herbal tea label next visit.",
+      "summarization_main_findings": "Type 2 Diabetes with an A1C of 8.3%, and hypertension."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate, capturing key details from the clinical note. However, it misses the mention of the patient's occasional noncompliance with diet and the reason for the ringing in the ears. Including these details would improve completeness.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "incorrect",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "George Patterson",
+      "age": "55-year-old",
+      "gender": "male",
+      "disease": "Type 2 Diabetes",
+      "chief_complaint": "Ongoing blurred vision and numbness in fingertips.",
+      "vital_signs": "",
+      "symptoms": "Ongoing blurred vision and numbness in fingertips. Also notes sporadic ringing in his ears, which he attributes to loud construction near his home.",
+      "medications": "Metformin 500 mg BID and Glipizide 5 mg daily",
+      "lab_results": "Last known A1C was 9.1%",
+      "assessment_plan": "Increase Glipizide dosage if readings remain high. Recommend ophthalmology consult for blurred vision. Stress dietary adjustments and consistent medication schedule.",
+      "summarization_main_findings": "He has a 5-year history of Type 2 Diabetes, currently on Metformin 500 mg BID and Glipizide 5 mg daily. Last known A1C was 9.1%. Reports occasional noncompliance with diet due to frequent travel for work."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate but has some missing elements. The symptoms field is empty despite the note mentioning frequent urination and increased thirst, and the vital_signs field is correctly left empty as no vital signs are mentioned in the note.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "missing",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Maria Ortega",
+      "age": "63-year-old",
+      "gender": "female",
+      "disease": "Type 2 Diabetes",
+      "chief_complaint": "Frequent urination, increased thirst over the last month.",
+      "vital_signs": "",
+      "symptoms": "Frequent urination, increased thirst",
+      "medications": "Metformin 1000 mg BID and Sitagliptin 100 mg daily",
+      "lab_results": "A1C = 8.7%, mild anemia noted",
+      "assessment_plan": "Recheck blood counts, consider adding basal insulin if next labs remain uncontrolled. Reinforce medication adherence and proper pill organization.",
+      "summarization_main_findings": "Maria Ortega is a 63-year-old female with poorly controlled Type 2 Diabetes, evidenced by an A1C of 8.7%, and concerns about medication adherence."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate, capturing key details such as the patient's name, age, gender, disease, and medications. However, it misses the mention of hyperlipidemia and incorrectly omits the patient's stress due to a job change as a symptom. The summarization of main findings is accurate.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "missing",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Anthony Reynolds",
+      "age": "48-year-old",
+      "gender": "male",
+      "disease": "Type 2 Diabetes",
+      "chief_complaint": "intermittent chest tightness",
+      "vital_signs": "BP 145/92, HR 80, Temp 98.2\u00b0F",
+      "symptoms": "Reports intermittent chest tightness, but denies severe pain.",
+      "medications": "Metformin 500 mg TID, Atorvastatin 20 mg daily for hyperlipidemia.",
+      "lab_results": "Last known A1C: 7.8%",
+      "assessment_plan": "Rule out cardiac causes of chest tightness. Continue current therapy for diabetes. Suggest stress management techniques and dietary counseling.",
+      "summarization_main_findings": "Anthony Reynolds is at risk due to his Type 2 Diabetes, elevated blood pressure, and stress-related eating habits."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate, capturing key details such as the patient's name, age, gender, disease, chief complaint, symptoms, medications, lab results, and assessment plan. However, the 'vital_signs' field is correctly left empty, but the summarization could be improved by mentioning the patient's concern about managing her diet while traveling.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "correct",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Priya Kapoor",
+      "age": "34-year-old",
+      "gender": "female",
+      "disease": "Type 2 Diabetes",
+      "chief_complaint": "Sudden weight loss, fatigue, and occasional dizziness.",
+      "vital_signs": "",
+      "symptoms": "Sudden weight loss, fatigue, and occasional dizziness.",
+      "medications": "Metformin 500 mg BID",
+      "lab_results": "A1C = 9.4%, slightly elevated liver enzymes.",
+      "assessment_plan": "Investigate liver enzyme elevation, reinforce dietary recommendations, ensure patient understands how to monitor glucose while traveling. Schedule follow-up labs in 6 weeks.",
+      "summarization_main_findings": "Newly diagnosed with Type 2 Diabetes, started on Metformin 500 mg BID last week. Labs: A1C = 9.4%, slightly elevated liver enzymes."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate with minor issues. The fields for patient name, age, gender, disease, chief complaint, medications, lab results, and assessment plan are correct. However, the symptoms field is missing, and the vital signs field is correctly empty as it is not mentioned in the note.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "missing",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "James Henderson",
+      "age": "59-year-old",
+      "gender": "male",
+      "disease": "Type 2 Diabetes and hyperlipidemia",
+      "chief_complaint": "Routine check-up for Type 2 Diabetes and hyperlipidemia",
+      "vital_signs": "",
+      "symptoms": "Patient states he has minimal exercise since winter started.",
+      "medications": "Metformin 1000 mg BID, Rosuvastatin 10 mg daily",
+      "lab_results": "Last A1C was 7.5%",
+      "assessment_plan": "Encourage more physical activity, potentially indoors. Order new labs to monitor lipid profile and blood glucose control. Discuss possible addition of medication for better glycemic management if needed.",
+      "summarization_main_findings": "James Henderson is at risk due to minimal exercise and a recent A1C of 7.5% in the context of Type 2 Diabetes and hyperlipidemia."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate but has a few minor issues. The extraction correctly captures the patient's name, age, gender, disease, chief complaint, symptoms, medications, lab results, and assessment plan. However, the 'vital_signs' field is correctly left empty, but the 'summarization_main_findings' could be improved for clarity.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "correct",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Anna Li",
+      "age": "27-year-old",
+      "gender": "female",
+      "disease": "Type 2 Diabetes",
+      "chief_complaint": "Headaches, frequent nausea, and feeling jittery at work.",
+      "vital_signs": "",
+      "symptoms": "Headaches, frequent nausea, and feeling jittery",
+      "medications": "Metformin 500 mg daily",
+      "lab_results": "Last recorded A1C was 8.2%",
+      "assessment_plan": "Advise limiting high-caffeine beverages. Re-check fasting glucose. Consider adjusting medication if glucose remains elevated. Suggest hydration and headache evaluation if symptoms persist.",
+      "summarization_main_findings": "She has a 2-year history of Type 2 Diabetes, controlled on Metformin 500 mg daily. Last recorded A1C was 8.2%. She started drinking high-caffeine energy drinks to cope with long shifts as a nurse."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate but has some minor issues. The disease field is incomplete as it does not mention chronic back pain, and the chief complaint field is slightly inaccurate as it omits the diabetes follow-up. The rest of the fields are correctly extracted.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "incorrect",
+      "chief_complaint": "incorrect",
+      "vital_signs": "correct",
+      "symptoms": "correct",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Kevin Wright",
+      "age": "66-year-old",
+      "gender": "male",
+      "disease": "Follow-up for Type 2 Diabetes and chronic back pain.",
+      "chief_complaint": "Follow-up for Type 2 Diabetes and chronic back pain.",
+      "vital_signs": "",
+      "symptoms": "Complains of slight dizziness upon standing, possibly orthostatic. He also mentions he\u2019s been skipping breakfast, which might contribute to blood sugar swings.",
+      "medications": "Current meds: Metformin 500 mg TID, Ibuprofen PRN for back pain, and Lisinopril 10 mg daily for mild hypertension.",
+      "lab_results": "Last A1C: 8.9%",
+      "assessment_plan": "Evaluate orthostatic hypotension. Increase dietary supervision, possibly add short-acting insulin if glycemic control remains inadequate. Suggest physical therapy referral for back pain.",
+      "summarization_main_findings": "Last A1C: 8.9%. Complains of slight dizziness upon standing, possibly orthostatic."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate with minor issues. The fields are generally correct, but the 'lab_results' field should be improved by specifying the test name. The 'summarization_main_findings' accurately reflects the key findings.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "correct",
+      "medications": "correct",
+      "lab_results": "incorrect",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "Olivia Baker",
+      "age": "43-year-old",
+      "gender": "female",
+      "disease": "Type 2 Diabetes",
+      "chief_complaint": "Persistent fatigue, difficulty concentrating at work.",
+      "vital_signs": "",
+      "symptoms": "Persistent fatigue, difficulty concentrating",
+      "medications": "Metformin 1000 mg BID and Empagliflozin 10 mg daily",
+      "lab_results": "Last A1C was 8.1%",
+      "assessment_plan": "Reassess medication dosage, possibly increase Empagliflozin. Encourage more consistent meal times. Schedule an A1C test in 3 weeks to monitor any improvement.",
+      "summarization_main_findings": "Type 2 Diabetes for 5 years, managed with Metformin 1000 mg BID and Empagliflozin 10 mg daily. Last A1C was 8.1%."
+    }
+  },
+  {
+    "overall_verdict": "The structured JSON extraction is mostly accurate but contains some inaccuracies. The symptoms field incorrectly includes 'confusion' and 'sleep disturbance', which are not directly mentioned as symptoms in the note. The rest of the fields are correctly extracted.",
+    "field_verdicts": {
+      "patient_name": "correct",
+      "age": "correct",
+      "gender": "correct",
+      "disease": "correct",
+      "chief_complaint": "correct",
+      "vital_signs": "correct",
+      "symptoms": "incorrect",
+      "medications": "correct",
+      "lab_results": "correct",
+      "assessment_plan": "correct",
+      "summarization_main_findings": "accurate"
+    },
+    "evidence": {
+      "patient_name": "David Kim",
+      "age": "70-year-old",
+      "gender": "male",
+      "disease": "Type 2 Diabetes (15 years), CHF (congestive heart failure), and chronic bronchitis",
+      "chief_complaint": "Mild shortness of breath when climbing stairs, random spikes in blood glucose.",
+      "vital_signs": "",
+      "symptoms": "Mild shortness of breath when climbing stairs",
+      "medications": "Metformin 500 mg BID, Furosemide 20 mg daily, and carvedilol 6.25 mg BID",
+      "lab_results": "Last known A1C was 9.0%",
+      "assessment_plan": "Evaluate cardiac status, check BNP levels. Consider adding insulin if glucose remains poorly controlled. Recommend addressing sleep quality issues and ensuring a consistent medication schedule.",
+      "summarization_main_findings": "Type 2 Diabetes with poor glucose control, and congestive heart failure."
+    }
+  }
+]
